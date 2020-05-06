@@ -1,7 +1,6 @@
 # muttley
 
-Found this code (written in 2010) on a very old backup, getting it on github
-for posterity.
+Found this code (which I've written for fun in 2010) on a very old backup, getting it on github for posterity.
 
 MUTTLEY is a 'device watch dog' AIX kernel extension.
 
