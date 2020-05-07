@@ -34,11 +34,11 @@ GETTING HELP
 
 	# ./muttley -h
 
-	muttley is a kernel device monitoring and watch dog extension allowing\n"
-    	load, status, start, display, stop and unload actions to be performed.\n"
-    	The extension monitors a device and (optionally) forces a kernel panic\n"
-    	and dump, upon loss of access to that device.\n"
-    	The monitored device will usually be a raw hard disk or logical volume."
+	muttley is a kernel device monitoring and watch dog extension allowing
+    	load, status, start, display, stop and unload actions to be performed.
+    	The extension monitors a device and (optionally) forces a kernel panic
+    	and dump, upon loss of access to that device.
+    	The monitored device will usually be a raw hard disk or logical volume.
 
 	usage:
 	  muttley -h
