@@ -80,7 +80,8 @@ GETTING HELP
 	The muttley command line controller must be executed in the same
         same directory where the 'muttley.kex' kernel extension is located.
 
-	DISCLAIMER\nAll sorts of strange and random 'features' may develop in
+	DISCLAIMER
+	All sorts of strange and random 'features' may develop in
 	your system by the simple though of using this program.
 
 LOAD THE MUTTLEY KERNEL EXTENSION
