@@ -33,7 +33,55 @@ extension is located):
 GETTING HELP
 
 	# ./muttley -h
-	(...) -> TRY IT :)
+
+	muttley is a kernel device monitoring and watch dog extension allowing\n"
+    	load, status, start, display, stop and unload actions to be performed.\n"
+    	The extension monitors a device and (optionally) forces a kernel panic\n"
+    	and dump, upon loss of access to that device.\n"
+    	The monitored device will usually be a raw hard disk or logical volume."
+
+	usage:
+	  muttley -h
+    	  muttley load
+	  muttley status
+	  muttley [-d device] [-c checks] [-s success] [-r runs]
+	  muttley [-i run_int] [-b behaviour] [-f] start
+	  muttley [-i disp_int] [-t times] display
+	  muttley stop
+	  muttley unload
+	  
+	options:
+	  -h             displays this help message
+	  -d device      path to device to monitor (default /dev/rhd4)
+	  -c checks      number of checks to perform on each run (default 3)
+	  -s success     number of successful checks per run to consider the
+	                 device as available (default 1)
+	  -r runs        consecutive failed run threshold to execute the defined
+	                 behaviour (default 2)
+	  -i run_int     interval between check runs in seconds (default 5)
+	  -b behaviour   behaviour on monitoring failure - none, panic
+	                 (default none)
+	  -f             allow 'device' to be any type of file, if using a file
+	                 it must be at least 512 bytes in size (useful for
+	                 test purposes, i.e. with a file which is removable)
+	  -v disp_int    statistics display interval in seconds (default 2)
+	  -t times       number of times the statistics will be display
+	                 (default 1)
+	arguments:
+	  load           loads the kernel extension
+	  status         query kernel extension status
+	  start          starts monitoring (and executes the defined action on
+	                 threshold)
+	  display        display monitoring statistics
+	  stop           stops monitoring
+	  unload         unloads the kernel extension
+	
+	Notes:
+	The muttley command line controller must be executed in the same
+        same directory where the 'muttley.kex' kernel extension is located.
+
+	DISCLAIMER\nAll sorts of strange and random 'features' may develop in
+	your system by the simple though of using this program.
 
 LOAD THE MUTTLEY KERNEL EXTENSION
 
@@ -75,5 +123,4 @@ Anyway... read the help page.
 
 Regards, and hope this is at least usefull has an example.
 
---
 Ricardo Gameiro
