@@ -82,7 +82,7 @@ GETTING HELP
 
 	DISCLAIMER
 	All sorts of strange and random 'features' may develop in
-	your system by the simple though of using this program.
+	your system by the simple thought of using this program.
 
 LOAD THE MUTTLEY KERNEL EXTENSION
 
